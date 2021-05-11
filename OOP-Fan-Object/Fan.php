@@ -62,8 +62,8 @@ class Fan
         } else {
             echo "Fan is OFF <br>";
         }
-        echo "Speed is: ".$this->getSpeed()."<br>";
-        echo "Radius is: ".$this->getRadius()."<br>";
-        echo "Color is: ".$this->getColor()."<br> <hr>";
+        echo "Speed is: ".self::getSpeed()."<br>";
+        echo "Radius is: ".self::getRadius()."<br>";
+        echo "Color is: ".self::getColor()."<br> <hr>";
     }
 }
