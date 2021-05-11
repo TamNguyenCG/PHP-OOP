@@ -1,5 +1,6 @@
 <?php
-include_once "../src/UserManager.php";
+include_once "../vendor/autoload.php";
+use src\UserManager;
 $name = $_REQUEST['name'];
 $age = $_REQUEST['age'];
 $address = $_REQUEST['address'];

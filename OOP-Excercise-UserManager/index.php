@@ -1,7 +1,6 @@
 <?php
-    include_once "src/UserManager.php";
-    include_once "src/User.php";
-
+    include_once "vendor/autoload.php";
+    use src\UserManager;
     $userManager = new UserManager("data.json");
     $users = $userManager->getAll();
 ?>
@@ -20,13 +19,18 @@
             border-collapse: collapse;
             text-align: center;
         }
+        h1{
+            color: blue;
+        }
     </style>
 </head>
-<a href="view/add.php"><button>Add</button></a>
+<body>
+<h1>User Manager Application</h1>
+<a href="view/add.php"><button style="height: 50px;width: 50px;text-align: center">Add</button></a>
 <hr>
 <table border="1">
     <tr>
-        <td>Index</td>
+        <td>No.</td>
         <td>Name</td>
         <td>Age</td>
         <td>Address</td>

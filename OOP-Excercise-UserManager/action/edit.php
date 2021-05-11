@@ -1,7 +1,8 @@
 <?php
-include_once "../src/User.php";
-include_once "../src/UserManager.php";
-include_once "../view/edit_form.php";
+include_once "../vendor/autoload.php";
+use src\User;
+use src\UserManager;
+
 $index = $_REQUEST['index'];
 $name = $_REQUEST['name'];
 $age = $_REQUEST['age'];

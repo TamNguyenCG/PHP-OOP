@@ -1,4 +1,5 @@
 <?php
+namespace src;
 class User {
     public mixed $name;
     public mixed $age;

@@ -1,5 +1,6 @@
 <?php
-include_once "../src/UserManager.php";
+include_once "../vendor/autoload.php";
+use src\UserManager;
 $index = $_REQUEST['index'];
 $userManager = new UserManager('../data.json');
 $userManager->deleteUser($index);
