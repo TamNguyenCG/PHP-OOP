@@ -1,5 +1,5 @@
 {
-  "name": "vendor_name/OOP-Excercise-UserManager",
+  "name": "vendor_name/OOP-App-UserManager",
   "description": "description",
   "minimum-stability": "stable",
   "license": "proprietary",
@@ -11,7 +11,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "src\\" : "src"
+      "src\\" : "../OOP-App-UserManager/src"
     }
   },
   "require": {

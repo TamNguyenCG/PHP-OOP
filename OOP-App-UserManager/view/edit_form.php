@@ -13,7 +13,7 @@ $user = $users[$index];
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Them moi</title>
+    <title>Edit User</title>
 </head>
 <body>
 <form action="../action/edit.php" method="post">
