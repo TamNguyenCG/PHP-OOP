@@ -1,19 +1,18 @@
 <?php
-
-
 class Fan
 {
-    private int $speed;
-    private bool $ON;
-    private float $radius;
-    private string $color;
+    private static int $speed;
+    private static bool $ON;
+    private static float $radius;
+    private static string $color;
+
 
     public function __construct()
     {
-        $this->speed = 1;
-        $this->ON = false;
-        $this->radius = 5;
-        $this->color = "blue";
+        self::$speed = 1;
+        self::$ON = false;
+        self::$radius = 5;
+        self::$color = "blue";
     }
 
     /**
@@ -21,44 +20,44 @@ class Fan
      */
     public function setSpeed(int $speed): void
     {
-        $this->speed = $speed;
+        self::$speed  = $speed;
     }
 
 
     public function setON(bool $ON): void
     {
-        $this->ON = $ON;
+        self::$ON = $ON;
     }
 
     public function getSpeed(): int
     {
-        return $this->speed;
+        return self::$speed ;
     }
 
 
     public function setRadius(float|int $radius): void
     {
-        $this->radius = $radius;
+        self::$radius= $radius;
     }
 
     public function getRadius(): float|int
     {
-        return $this->radius;
+        return self::$radius;
     }
 
     public function setColor(string $color): void
     {
-        $this->color = $color;
+        self::$color = $color;
     }
 
     public function getColor(): string
     {
-        return $this->color;
+        return self::$color;
     }
 
     public function toString()
     {
-        if ($this->ON == true) {
+        if (self::$ON == true) {
             echo "Fan is ON <br>";
         } else {
             echo "Fan is OFF <br>";
