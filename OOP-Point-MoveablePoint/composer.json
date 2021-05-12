@@ -1,0 +1,19 @@
+{
+  "name": "vendor_name/oop-point-moveable-point",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "tamnguyen",
+      "email": "email@example.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "source\\": "source"
+    }
+  },
+  "require": {
+  }
+}
